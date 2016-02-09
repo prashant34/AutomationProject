@@ -32,8 +32,7 @@ public class Login {
        driver.findElement(By.xpath("/html/body/div[3]/div[2]/form[1]/div[2]/div/table[2]/tbody[1]/tr[1]/td[16]/a[4]")).click();*/
        driver.findElement(By.id("jpform:jpsubmit")).click();
        driver.findElement(By.id("cllink-12621-SL-3")).click();
-       WebDriverWait wait = new WebDriverWait(driver, 60);
-       wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("12621-SL-GN-5")));
+       Thread.sleep(10000);
        driver.findElement(By.id("12621-SL-GN-5")).click();
        driver.findElement(By.id("addPassengerForm:psdetail:0:p1253925910")).sendKeys("PRASHANT KUMAR");
        driver.findElement(By.id("addPassengerForm:psdetail:0:psgnAge")).sendKeys("22");
